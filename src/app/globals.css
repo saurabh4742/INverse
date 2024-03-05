@@ -16,18 +16,55 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/*clerk disables*/
+.cl-internal-b3fm6y{
+  display: none;
+}
+.cl-footerActionLink,.cl-footerActionLink:hover{
+  color:#0C0A09;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* scrollbar */
+/* For webkit browsers */
+::-webkit-scrollbar {
+  width: 4px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #FAFAF9; /* color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* color of the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0C0A09; /* color of the thumb on hover */
+}
+
+/* For Firefox and other browsers */
+/* This will hide the default scrollbar */
+body {
+  scrollbar-width: thin; /* "thin", "auto", "none" */
+}
+
+/* Style the scrollbar track */
+body::-webkit-scrollbar-track {
+  background: #f1f1f1; /* color of the track */
+}
+
+/* Style the scrollbar thumb */
+body::-webkit-scrollbar-thumb {
+  background: #888; /* color of the thumb */
+}
+
+/* Style the scrollbar thumb on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #0C0A09; /* color of the thumb on hover */
 }

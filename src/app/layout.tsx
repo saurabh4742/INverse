@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Kanit } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import { ClerkProvider} from '@clerk/nextjs'
+import { dark } from "@clerk/themes";
+const kanit = Kanit({
+  subsets: ["latin"],
+  weight: "400"
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,9 +18,22 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <ClerkProvider appearance={{
+      elements: {
+        formButtonPrimary:"bg-[#0C0A09] hover:bg-[#292524] text-sm normal-case"
+        ,
+        variables: {
+          colorText: "#FAFAF9"
+        }
+      },
+    }}>
+      <html lang="en">
+      <body className={`${kanit.className} bg-[#FAFAFA] dark:bg-[#0C0A09] text-[#18181B] dark:text-[#FAFAF9]`}>
+      {children}
+        </body>
     </html>
+    </ClerkProvider>
   );
 }
