@@ -13,7 +13,7 @@ const AllUser = async () => {
 
   return (
     <div className="items-center justify-center flex-col gap-4 mt-4">
-      {users?.map((user) => (
+      {users?.map((user:any) => (
         
         <div className="flex gap-1 my-4 items-center text-sm "  key={user.id}>
           <img className="h-12 w-12 rounded-full " src={user.imageUrl} alt={user.name} />
