@@ -16,8 +16,8 @@ const AllUser = async () => {
       {users?.map((user:any) => (
         
         <div className="flex gap-1 my-4 items-center text-sm "  key={user.id}>
-          <img className="h-12 w-12 rounded-full " src={user.imageUrl} alt={user.name} />
-          <p>{user?.name}</p>
+         <a href={`/chatnow/${user.id}`}><img className="h-8 w-8 rounded-full hover:scale-125  cursor-pointer"
+           src={user.imageUrl} alt={user.name} /></a> 
         </div>
       ))}
     </div>
