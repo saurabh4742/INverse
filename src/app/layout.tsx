@@ -22,15 +22,15 @@ export default function RootLayout({
   return (
     <ClerkProvider appearance={{
       elements: {
-        formButtonPrimary:"bg-[#0C0A09] hover:bg-[#292524] text-sm normal-case"
+        formButtonPrimary:"bg-[#10B981] hover:bg-[#6EE7B7] text-sm normal-case"
         ,
         variables: {
-          colorText: "#FAFAF9"
+          colorText: "#022C22"
         }
       },
     }}>
       <html lang="en">
-      <body className={`${kanit.className} bg-[#FAFAFA] dark:bg-[#0C0A09] text-[#18181B] dark:text-[#FAFAF9]`}>
+      <body className={`${kanit.className} bg-[#F0FDFA]  text-[#022C22]`}>
       {children}
         </body>
     </html>

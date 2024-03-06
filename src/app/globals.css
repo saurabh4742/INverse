@@ -21,7 +21,7 @@
   display: none;
 }
 .cl-footerActionLink,.cl-footerActionLink:hover{
-  color:#0C0A09;
+  color:#022C22;
 }
 
 @layer utilities {
@@ -45,7 +45,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0C0A09; /* color of the thumb on hover */
+  background: #022C22; /* color of the thumb on hover */
 }
 
 /* For Firefox and other browsers */
@@ -66,5 +66,5 @@ body::-webkit-scrollbar-thumb {
 
 /* Style the scrollbar thumb on hover */
 body::-webkit-scrollbar-thumb:hover {
-  background: #0C0A09; /* color of the thumb on hover */
+  background: #022C22; /* color of the thumb on hover */
 }
