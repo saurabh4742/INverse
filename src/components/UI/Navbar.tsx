@@ -13,7 +13,7 @@ const Navbar = async () => {
               className="bg-[#10B981]  text-[#F0FDFA] rounded-full px-4 hover:opacity-75 hover:transform hover:scale-105 transition duration-300 ease-in-out"
               type="button"
             >
-              <a href="/dm">Chat Now</a>
+              <a href="/chatnow">Chat Now</a>
             </button>
             <div className='rounded-full border-2 border-[#F0FDFA]'><UserButton afterSignOutUrl="/" /></div>
           </>
