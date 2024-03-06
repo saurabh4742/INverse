@@ -12,7 +12,7 @@ const page = () => {
       <div className="flex h-5/6  justify-center items-center bg-white sm:p-1 ">
         <div className="flex-col sm:w-6/12 w-full justify-center items-center">
           
-          <div className="text-center text-wrap px-4 mb-2 ">
+          <div className="text-center text-wrap px-4 my-3 ">
             <h1 className="bold text-3xl my-4 uppercase">
               Welcome to Inverse chat app
             </h1>{" "}
