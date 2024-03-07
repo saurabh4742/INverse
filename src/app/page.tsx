@@ -1,11 +1,12 @@
 import ChatWithUs from "@/Lottie/ChatWithUs";
 import Footer from "@/components/UI/Footer";
 import Navbar from "@/components/UI/Navbar";
+import SingleLineQuotes from "@/components/UI/SingleLineQuotes";
 import React from "react";
 const page = () => {
   
   return (
-    <div className="space-y-8 bg-white h-[100vh] gap-2 w-full  ">
+    <div className="sm:space-y-8 space-y-28     bg-white h-[100vh] gap-2 w-full  ">
       {/* navbar */}
       <Navbar/>
       {/* main */}
@@ -22,7 +23,8 @@ const page = () => {
             chatting now!
           </div>
           <div className="flex justify-center  "><ChatWithUs/></div>
-          <div className="flex justify-center my-4">
+          <SingleLineQuotes/>
+          <div className="flex justify-center bg-white my-4">
             <button
               className="bg-[#10B981] text-xl text-[#F0FDFA] rounded-full px-8 py-3 hover:opacity-75 hover:transform hover:scale-105 transition duration-300 ease-in-out"
               type="button"

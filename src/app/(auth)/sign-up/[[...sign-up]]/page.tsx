@@ -1,9 +1,7 @@
 import { SignUp } from "@clerk/nextjs";
-import { dark } from "@clerk/themes";
-
 export default function Page() {
   return (
-    <div className="flex items-center justify-center h-[100vh] ">
+    <div className="flex items-center bg-[#F0FDFA] justify-center h-[100vh] ">
       <SignUp  />
     </div>
   );

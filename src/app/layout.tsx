@@ -30,7 +30,7 @@ export default function RootLayout({
       },
     }}>
       <html lang="en">
-      <body className={`${kanit.className} bg-[#F0FDFA]  text-[#022C22]`}>
+      <body className={`${kanit.className}   text-[#022C22]`}>
       {children}
         </body>
     </html>
